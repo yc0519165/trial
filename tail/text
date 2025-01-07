@@ -1,0 +1,379 @@
+1.  JavaScript is a high-level,Sychronous, interpreted programming language,
+    used to create interactive and dynamic web content.
+    That can runon both the client and server sides.
+
+    1.1
+    JavaScript is Singele-threded, Asychronous, High level programming language
+    JavaScript is Singele-threded, meaning it can handel a task at one time
+    In js Sychronous means js are execute a programme are sequentially.
+    In Asychronous means js are execute a programme are parllay.
+
+2.  Hoisting is defoult behaviour in js, js are declare a function and variables are move on the top
+
+3.  Promises are handel asychcronous operation in js such as resolve, reject, pending operations
+    pending - operation are still working
+    resolve - operation are succesfull
+    reject - operation are failed
+
+4.  callback hell in js heppens when callbacks are deeply nested, making the code hard, read, manage
+
+5.  SetTimeOut and SetInterval are both the timer functions in js
+    SetTimeOut - Executes a function after a specified delay.
+    setTimeOut(()=>{
+    console.log('function are run only once after 5s')
+    },5000)
+    SetInterval - Repeats execution at specified intervals.
+    setInterval(()=>{
+    console.log('repeat a cade per 5s')
+    }, 5000)
+
+6.  Arrow function is short form of js function
+    const arrFunc = () => console.log('hello')
+
+7.  Callback function in js means pass a function as a parameter to another function is know as callBack function
+
+8.  async & await keywords are use to write a ascynchronous code
+    async - are declare a function that alway a promise
+    await - are declare a function after resolve a promise
+
+9.  fetch keyword in javasript is used to make a network requets, like getting a data from server or return a promise.
+
+10. API Stand apllication programming interface
+    api are use to connect client to server
+    api is way to communicate each other
+
+11 .
+Genrative function are speciall function that can pause and resume thier execution
+
+12. '==' and '===' both are the comparison operatore in js
+    '==' Are check there equality of values
+    '===' Are check there equality of values or types
+
+13. npm stand node package manager
+    npm are use in node js
+    npm are use to install pakages.
+    npm are manage our dependency
+
+14. Currying function in js are use to pass the functions in another functions
+
+15. The event loop in JavaScript ensures the efficient execution of asynchronous tasks by managing the
+    i. Call Stack, -/- The Call Stack is where function calls are added when they are invoked.
+    ii. Callback Queue, -/- Once an asynchronous task is completed, its callback is placed in the Callback Queue
+    iii. Microtask Queue. -/- Microtasks are executed immediately after the currently executing function and before moving to the Callback Queue.
+
+16. JSON stands javaScript object notation
+    json is a lightweight data formate used to store and exchange data, it's a easy to read and write both are the humans and machins
+
+JSON.Parse() keyword are use to convert the json string to javasript object
+JSON.Stringify() keyword are use to convert the javascript object to json string
+
+17. DOM Stand Document Object Model in javascript  
+    The DOM allows to javascript to intract with changes the content and structure of webpage.
+
+18. prototypal inheritance is a mechanism in JavaScript where objects can inherit from other objects, allowing properties and methods to be shared across different objects.
+
+19. The Temporal Dead Zone (TDZ) in JavaScript is the time period between when a variable is declared (using let or const) and when it is initialized. During this time, the variable exists but cannot be accessed, and trying to do so will throw a ReferenceError.
+    In short: The TDZ ensures you can't use variables before they're properly declared and initialized.
+
+20. Lexical scope means that the scope (or visibility) of a variable is determined by its location in the source code, and this scope doesn't change no matter where the code is executed.
+
+21. Outer Function
+    Closures let functions access variables from their outer scope even after the outer function is done.
+
+22. IIFE
+    An IIFE (Immediately Invoked Function Expression) is a function in JavaScript It's often used to create a private scope.
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+React.js
+\***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+1.  React is javaScript librarie are use to build dynamic and userInterface
+    developed by facebook in 2011
+
+2.  components in react are like small piece of UI that can be reused to build react app
+    there are two types of components
+    function component
+    .are initialy stateless
+    .it can use hooks to manage states
+
+    class component
+     . are statefull component can manage a state
+                                                                                          
+But mostly function component are use becouse its a easy to use, easy to maintain and easy read code
+
+3.  JSX Stands are JavaScript extention
+    jsx are to allow to write HTML-like code inside a javascript
+    jsx are make a code easy to understand
+
+4.  Virtual dom is faster and smarter version to real dom react are use virtual dom to uses upadate ui efficiently
+
+5.  Props are propertes in react
+    it can be use to passing a data from parent component to chiled components
+
+6.  useState is a memory of component
+    useState are allows you to add and manage dynamic values in react functional components
+    it working as initializing and updating a values
+
+7.  In react Key is special attribute use to uniquly identife elements in a list
+
+8.  useEffect is a part of react hooks
+    useEffect are use to handel a side effects such as fetching a data, updating a dom
+
+9.  Event handle in react let you respond to user actions, to handle them attaching a functions like onClick onChange etc
+
+10. prop drilling heppens when you pass data to many component even if only the last need component
+
+11. Context API are use to pass a data are cross component to help prop drilling
+
+12. Lifecycle Methods in React(Class Componenets)
+    Mounting (Component is added to the DOM):
+    Updating (Component re-renders due to props or state changes);
+    Unmounting (Component is removed from the DOM):
+
+useEffect Hook (Functional Components):
+The useEffect hook replaces many lifecycle methods in functional components. It runs code after the component renders.
+In short: useEffect handles side effects in functional components and replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+13. What is hooks in react ?
+    Hooks are React functions that enable state and lifecycle features in functional components.
+
+14.Explain the building blocks of React?
+--Components
+--JSX
+--Props and State
+--Context
+--Virtual DOM
+
+15. Explain props and state in React with differences
+
+Prope --- The Data is passed from one component to another.
+--- It is Immutable (cannot be modified).
+--- Props are not upadting
+
+State --- The Data is passed within the component only
+--- It is Mutable ( can be modified).
+--- State are upadting
+
+16. How do browsers read JSX?
+    In general, browsers are not capable of reading JSX and only can read pure JavaScript. The web browsers read JSX with the help of a transpiler. Transpilers are used to convert JSX into JavaScript. The transpiler used is called Babel
+
+17.. Explain the lifecycle methods of components
+A React Component can go through four stages of its life as follows.
+
+Initialization: This is the stage where the component is constructed with the given Props and default state. This is done in the constructor of a Component Class.
+Mounting: Mounting is the stage of rendering the JSX returned by the render method itself.
+Updating: Updating is the stage when the state of a component is updated and the application is repainted.
+Unmounting: As the name suggests Unmounting is the final step of the component lifecycle where the component is removed from the page.
+
+18. What is higher-order component in React?
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+MERN 
+\***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+Top MERN Stack Interview Questions:
+
+1. What is the MERN stack?
+   A JavaScript-based technology stack: MongoDB, Express.js, React.js, Node.js.
+
+2.What is MongoDB?
+A NoSQL database that stores data in a flexible, JSON-like format.
+
+3.What is Express.js?
+A web framework for Node.js used to build APIs and web applications.
+
+4.What is React.js?
+A frontend JavaScript library for building user interfaces.
+
+5.What is Node.js?
+A JavaScript runtime that allows running JavaScript on the server.
+
+6.How do MongoDB and Node.js work together?
+Node.js communicates with MongoDB using libraries like Mongoose to perform database operations.
+
+7.What is Mongoose?
+An Object Data Modeling (ODM) library for MongoDB in Node.js
+
+8.What is the role of React in the MERN stack?
+React handles the client-side, creating interactive and dynamic user interfaces.
+
+9.How does the MERN stack connect frontend and backend?
+React sends HTTP requests (using fetch or Axios) to Express APIs running on Node.js, which interact with MongoDB.
+
+10.What is the purpose of useEffect in React?
+It handles side effects like data fetching, subscriptions, or DOM updates in functional components.
+
+11.What is the res.send method in Express?
+Sends a response from the server to the client.
+
+12.How do you deploy a MERN application?
+Use platforms like Heroku for backend and Netlify or Vercel for frontend. Combine them via xenvironment variables.
+
+13.What is npm?
+The Node Package Manager, used to install libraries and manage dependencies.
+
+14.What is JSX in React?
+A syntax extension for JavaScript that allows writing HTML-like code in React components.
+
+15.What is the difference between state and props in React?
+State: Internal data of a component (mutable).
+Props: Data passed to a component from its parent (immutable).
+
+16.What is middleware in Express?
+Functions that execute during the request-response cycle, e.g., for authentication, logging, or parsing JSON.
+
+17.What are React hooks?
+Functions like useState and useEffect that let you use state and lifecycle features in functional components.
+
+18.What is CORS, and why is it important in MERN?
+Cross-Origin Resource Sharing; allows the frontend (React) to communicate with a backend (Node.js) on a different domain.
+
+19.What is the difference between REST and GraphQL?
+REST: Fixed endpoints, multiple requests for related data.
+GraphQL: Single endpoint, fetch only required data with queries.
+
+20.How do you secure a MERN app?
+Use JWT for authentication, validate user input, and secure APIs with middleware.
+
+21. What is RESTfull API ?
+    A RESTful API (Representational State Transfer API) is a web service that follows REST principles to enable communication between a client and a server. It uses HTTP methods to perform CRUD (Create, Read, Update, Delete) operations on resources.
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+MongoDB \***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+1. What is MongoDB?
+   A NoSQL database that stores data in a flexible, JSON-like format called BSON.
+
+2. What is the difference between SQL and NoSQL databases?
+   SQL: Structured data in tables (relational).
+   NoSQL: Unstructured or semi-structured data in collections (non-relational).
+
+3. What is a collection in MongoDB?
+   A collection is a group of documents, similar to a table in relational databases.
+
+4. What is a document in MongoDB?
+   A document is a JSON-like object that contains key-value pairs, equivalent to a row in SQL.
+
+5. What are indexes in MongoDB?
+   Indexes improve query performance by allowing MongoDB to search documents faster.
+
+6. What is the purpose of the \_id field?
+   The \_id is a unique identifier for each document in a collection, automatically generated if not provided.
+
+7. How is MongoDB different from traditional databases?
+   MongoDB is schema-less, supports horizontal scaling, and stores data as BSON documents.
+
+8. What is replication in MongoDB?
+   Replication creates multiple copies of data across servers to ensure high availability.
+
+9. What is sharding in MongoDB?
+   Sharding divides data across multiple servers to handle large datasets and high traffic.
+
+10. What is aggregation in MongoDB?
+    Aggregation processes data records and returns computed results, similar to SQL's GROUP BY or JOIN. Example: $match, $group, $project.
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+Express js \***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+1. What is Express.js?
+   A fast, lightweight Node.js framework for building web applications and APIs.
+
+2. Why use Express.js?
+   Simplifies server-side development, supports middleware, and provides robust routing features.
+
+3. What is middleware in Express.js?
+   Functions that execute during the request-response cycle, like parsing JSON, logging, or authentication.
+
+4. What is the difference between app.use and app.get?
+   app.use: Applies middleware to all routes or specific routes.
+   app.get: Handles GET requests for a specific route.
+
+5. How do you handle errors in Express.js?
+   Use an error-handling middleware--
+   app.use((err, req, res, next) => {
+   res.status(500).send(err.message);
+   });
+
+6. What is routing in Express.js?
+   Defining endpoints for handling HTTP methods
+   (GET, POST, etc.).app.get('/route', (req, res) => res.send('Hello'));
+
+7. How do you serve static files in Express.js?
+   Use the express.static middleware
+   app.use(express.static('public'));
+
+8. What is req.params in Express.js?
+   An object that holds route parameters:
+   app.get('/user/:id', (req, res) => res.send(req.params.id));
+
+9. How do you parse incoming JSON data in Express.js?
+   Use express.json() middleware:
+   app.use(express.json());
+
+10. What is the difference between res.send and res.json?
+    res.send: Sends a response as plain text, HTML, or JSON.
+    res.json: Specifically sends a JSON response.
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+Node js \***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+1. What is Node.js?
+   A JavaScript runtime built on Chrome's V8 engine for building fast, scalable server-side applications.
+
+2. What is the difference between Node.js and JavaScript?
+   JavaScript: A programming language used mainly in browsers.
+   Node.js: A runtime environment for executing JavaScript on the server.
+
+3. What is the Event Loop in Node.js?
+   A mechanism that handles asynchronous operations by executing callbacks and managing non-blocking I/O tasks.
+
+4. What are streams in Node.js?
+   Streams are objects for reading or writing data piece by piece. Examples: Readable, Writable, Duplex, Transform.
+
+5. What is npm?
+   Node Package Manager; it manages libraries and dependencies for Node.js applications.
+
+6. What is the difference between require and import?
+   require: Used in CommonJS modules.
+   import: Used in ES6 modules (modern JavaScript).
+
+7. How does Node.js handle asynchronous operations?
+   Using callbacks, promises, and async/await.
+
+8. What is the difference between process.nextTick() and setImmediate()?
+   process.nextTick(): Executes before the next event loop phase.
+   setImmediate(): Executes in the next event loop iteration.
+
+9. What are Node.js modules?
+   Reusable blocks of code, such as built-in modules (fs, http) or user-defined modules.
+
+10. What is middleware in Node.js?
+    Middleware functions process requests before they reach the endpoint or modify responses before sending them back. Often used in frameworks like Express.js.
+
+\***\*//////**\*\***\*//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+Backend using lidraries questions - - - \***\*//////**\*\*\***//////**\*\***///////**\*\***//////**\*\***/////**\***//////**\*\***//////**\*\***//////**\***/////
+
+1. What is Bcrypt ?
+   Bcrypt is a password-hashing library that provides a secure way to store passwords. It uses a combination of salting and hashing to make password storage more secure.
+
+2. What is Body-Parser ?
+   Body-parser is a middleware in Express.js that is used to parse incoming request bodies, making the data accessible in a readable format (like JSON or URL-encoded data).
+   It processes the data sent in HTTP requests (like POST requests) so that it can be used in your application.
+
+3. What is CORS ?
+   CORS (Cross-Origin Resource Sharing) is a mechanism that allows web applications running at one origin (domain) to make requests to resources on a different origin (domain).
+
+4. What is Dotenv ?
+   Dotenv is a zero-dependency Node.js package used to load environment variables from a .env file into process.env. It helps keep sensitive data (like API keys, database credentials) and configuration settings separate from the codebase.
+
+5. What is JOI ?
+   Joi is a validation library for JavaScript used to validate and sanitize data, especially in web applications. It helps ensure that input data (e.g., from a user or API) meets specific requirements before further processing.
+
+6. What is JsonWebToken (JWT)
+   jsonwebtoken (JWT) is a popular Node.js library used for securely generating and verifying JSON Web Tokens. JWTs are often used for authentication and authorization in web applications.
+
+7. What is Mongoose ?
+   Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a higher-level abstraction to interact with MongoDB, allowing you to define schemas, models, and validations for your data.
+
+8. What is Nodemon ?
+   Nodemon is a development tool for Node.js that automatically restarts the server whenever there are changes in the application’s source files (like .js files). It helps improve productivity by eliminating the need to manually stop and restart the server during development.
